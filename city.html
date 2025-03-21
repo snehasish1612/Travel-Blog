@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found: City Adventure</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/index.html">Lost & Found</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topic
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/mountain.html">Mountain</a>
+                        <a class="dropdown-item" href="/beach.html">Beach</a>
+                        <a class="dropdown-item" href="/city.html">City Life</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#spModal">Support</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Cities: <span class="text-muted">A Vibrant Getaway</span></h2>
+                <p class="lead">Traveling to a city offers an exciting mix of culture, history, and modern attractions.
+                    Whether exploring iconic landmarks, indulging in local cuisine, or experiencing the nightlife,
+                    cities provide a dynamic and unforgettable travel experience for all types of travelers.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="images/cityContent1.avif" class="img-fluid" alt="cityContent1">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Must-Visit City Destinations: <span class="text-muted">Exploring the
+                        World's Most Iconic Urban Landscapes</span></h2>
+                <p class="lead">From the towering skyscrapers of New York to the historic streets of Paris, the world is
+                    filled with captivating cities. Destinations like Tokyo, Dubai, and London attract travelers with
+                    their unique blend of heritage, entertainment, and innovation, making each visit a new adventure.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="images/cityContent2.jpg" class="img-fluid" alt="cityContent2">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Best Activities for City Travelers: <span class="text-muted">Culture,
+                        Entertainment, and Exploration in the Urban Jungle</span></h2>
+                <p class="lead">Cities offer a wide range of activities, including sightseeing, shopping, museum visits,
+                    and food tours. Adventure seekers can explore vibrant street markets, while culture enthusiasts can
+                    enjoy theater performances and historic sites. Whether you seek excitement or relaxation, city
+                    travel has something for everyone.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="images/cityContent3.jpg" class="img-fluid" alt="cityContent3">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    </div>
+
+    <!-- Support Modal -->
+    <div class="modal fade" id="spModal" tabindex="-1" role="dialog" aria-labelledby="spModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="spModalTitle">Support</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    For assistance, please reach out to our support team at <a href="support@lostandfound.com">support@lostandfound.com</a>. We’re here to help with any inquiries or concerns.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2024-2025 Lost & Found</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#spModal">Support</a></li>
+            <li class="list-inline-item"><a href="/contact.html">Contact Us</a></li>
+            <li class="list-inline-item"><a href="#">Back to top</a></li>
+        </ul>
+    </footer>
+
+    <!-- Bootstrap JS (Fixed Missing Dependencies) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <!-- Added jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- Added Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fix Navbar Dropdown on Older Browsers -->
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+
+</body>
+
+</html>
